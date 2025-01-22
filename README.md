@@ -3,7 +3,7 @@
 ## Overview
 The PAGER (BEEPER) is a wireless telecommunications system based on Meshtastic LoRa mesh technology. It consists of individual beeper devices that can communicate with each other and a central dashboard display for monitoring and management. The system is designed for precise location tracking and efficient communication in remote or off-grid areas.
 
-![General Device Sketch](path/to/general-sketch.png)
+![General Device Sketch](images/general-sketch.png)
 
 ---
 
@@ -26,7 +26,7 @@ Each beeper can:
 - Operate in the mesh network independently
 
 ### Sketch
-![Beeper Device Sketch](path/to/sensor-sketch.png)
+![Beeper Device Sketch](images/sensor-sketch.jpeg)
 
 ---
 
@@ -46,7 +46,7 @@ Key Features:
 - Configuration management
 
 ### Sketch
-![Display Device Sketch](path/to/display-sketch.png)
+![Display Device Sketch](images/display-sketch.jpeg)
 
 ---
 
@@ -55,7 +55,7 @@ Key Features:
 ### Communication Overview
 The system utilizes Meshtastic LoRa mesh technology for robust, long-range wireless communication. Beepers can communicate directly with each other and relay information through the mesh network to reach the central dashboard.
 
-![Communication Flow Diagram](path/to/communication-diagram.png)
+![Communication Flow Diagram](images/communication-diagram.jpeg)
 
 ### Workflow Diagram
 The system workflow includes:
@@ -69,7 +69,7 @@ The system workflow includes:
    - Manages device configurations
    - Monitors for alerts or emergencies
 
-![Workflow Diagram](path/to/workflow-diagram.png)
+![Workflow Diagram](images/workflow-diagram.jpeg)
 
 ---
 

@@ -13,9 +13,9 @@ The PAGER (BEEPER) is a wireless telecommunications system based on Meshtastic L
 The beeper devices form a mesh network, allowing them to communicate with each other and share location data. Each beeper includes:
 
 - **Main Board ([WiFi LoRa 32 V3.2](datasheets/HTIT-WB32LA_V3.2.pdf))**
-- **GPS Module**: Provides accurate location tracking
+- **GPS Module** ([NEO-6M GPS ](datasheets/NEO-6.pdf)): Provides accurate location tracking
 - **LED Indicator**: Shows connection and battery status
-- **Small Display**: Shows essential status information
+- **Small Display (Onboard OLED)**: Shows essential status information
 - **Battery**: Long-lasting rechargeable power source
 
 Each beeper can:
@@ -38,7 +38,7 @@ The central dashboard display acts as a management hub for the entire beeper net
 - **Gauge**: Show direction of the specified device.
 - **LED**: Show system status.
 - **Button**: Allows navigation through the menu.
-- **OLED Display**: Shows locations and status of all beepers in the network
+- **OLED Display ([SSD1306](datasheets/SSD1306.pdf))**: Shows locations and status of all beepers in the network
 
 Key Features:
 - Real-time tracking of all beepers

@@ -1,31 +1,48 @@
-# Project Name
+# PAGER (BEEPER)
 
 ## Overview
-This project is designed to [brief explanation of what it does]. It integrates [key features] to [specific functionality]. Below is a general sketch of the device, highlighting its main physical features:
+The PAGER (BEEPER) is a wireless telecommunications system based on Meshtastic LoRa mesh technology. It consists of individual beeper devices that can communicate with each other and a central dashboard display for monitoring and management. The system is designed for precise location tracking and efficient communication in remote or off-grid areas.
 
 ![General Device Sketch](path/to/general-sketch.png)
 
 ---
 
-## Sensor Device
+## Beeper Devices (Sensor Device)
 
 ### Description
-The sensor device [explain how it works, e.g., collects data like temperature, motion, etc., using specific sensors]. The following sensors are included in the design:
-- **Sensor 1**: [Part Number] - [Description]
-- **Sensor 2**: [Part Number] - [Description]
-- **Sensor 3**: [Part Number] - [Description]
+The beeper devices form a mesh network, allowing them to communicate with each other and share location data. Each beeper includes:
+
+- **GPS Module**: Provides accurate location tracking
+- **LED Indicator**: Shows connection and battery status
+- **Small Display**: Shows essential status information
+- **Battery**: Long-lasting rechargeable power source
+
+Each beeper can:
+- Track and broadcast its location
+- Receive locations from other beepers in range
+- Send and receive emergency signals
+- Display basic status information
+- Operate in the mesh network independently
 
 ### Sketch
-![Sensor Device Sketch](path/to/sensor-sketch.png)
+![Beeper Device Sketch](path/to/sensor-sketch.png)
 
 ---
 
-## Display Device
+## Central Dashboard Display (Display Device)
 
 ### Description
-The display device [explain how it works, e.g., processes and visualizes the data collected by the sensor device]. It uses [specific hardware components like microcontrollers, displays, etc.] to function. Key components include:
-- **Display**: [Part Number] - [Description]
-- **Microcontroller**: [Part Number] - [Description]
+The central dashboard display acts as a management hub for the entire beeper network. It provides comprehensive monitoring and control capabilities:
+
+- **Gauge**: Show direction of the specified device.
+- **LED**: Show system status.
+- **Button**: Allows navigation through the menu.
+- **OLED Display**: Shows locations and status of all beepers in the network
+
+Key Features:
+- Real-time tracking of all beepers
+- Network health monitoring
+- Configuration management
 
 ### Sketch
 ![Display Device Sketch](path/to/display-sketch.png)
@@ -35,13 +52,23 @@ The display device [explain how it works, e.g., processes and visualizes the dat
 ## Communication and Workflow
 
 ### Communication Overview
-The devices communicate using [specific communication protocol, e.g., Bluetooth, Wi-Fi, I2C]. Below is a figure showing the communication flow between the devices:
+The system utilizes Meshtastic LoRa mesh technology for robust, long-range wireless communication. Beepers can communicate directly with each other and relay information through the mesh network to reach the central dashboard.
 
 ![Communication Flow Diagram](path/to/communication-diagram.png)
 
 ### Workflow Diagram
-The workflow for the system is illustrated below, detailing the steps from sensor data collection to display visualization:
+The system workflow includes:
+
+1. Beeper devices continuously track their location via GPS
+2. Each beeper broadcasts its location and status to the mesh network
+3. Beepers relay messages from other devices to extend network range
+4. The central dashboard:
+   - Collects data from all beepers
+   - Displays real-time network status
+   - Manages device configurations
+   - Monitors for alerts or emergencies
 
 ![Workflow Diagram](path/to/workflow-diagram.png)
 
 ---
+
